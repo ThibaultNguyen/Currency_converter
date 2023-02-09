@@ -17,10 +17,18 @@ class Recv {
     private String error;
     private String icc;
     
-    public Recv({})
+    public Recv({}) {}
 
-    public String getLhs(){
+    public String getLhs() {
         reurn lhs;
     }
 
+    public String getRhs() {
+        return rhs;
+    }
+
+}
+
+public class Convert extends HttpServlet {
+    
 }
