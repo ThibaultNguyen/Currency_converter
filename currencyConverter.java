@@ -17,8 +17,9 @@ class Recv {
     private String error;
     private String icc;
     
-    public Recv({}) {}
-
+    public Recv()
+    {
+    }
     public String getLhs() {
         reurn lhs;
     }
@@ -68,7 +69,7 @@ public class Convert extends HttpServlet {
                 /*Parse the result which is in json format*/
                 Gson gson = new Gson();
                 Recv st = gson.fromJson(str, Recv.class);
-                String rhs.replaceAll("�", "");
+                rhs = rhs.replaceAll("ï¿½", "");
                 /*we do the check in order to print the additional word(millions, billions etc)*/
                 StringTokenizer strto = new StringTokenizer(rhs);
                 String nextToken;
